@@ -39,7 +39,7 @@ $(document).ready(function() {
 	  controlArrows: true,
 	  verticalCentered: true,
 	  resize : false,
-	  sectionsColor : ['#000000', '#000000', '#000000', '#000000'],
+	  sectionsColor : ['#000000', '#FFFFFF', '#000000', '#000000'],
 	  paddingTop: '0',
 	  paddingBottom: '0',
 	  fixedElements: '',
@@ -65,6 +65,17 @@ $(document).ready(function() {
 		typeSpeed: 150,
 		showCursor: false
 	});
+
+	// Letter Spacing
+  var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  var date = new Date().getDay();
+  var today = weekdays[date];
+  $('.fancy_title').text(today).lettering();
+  $('span').mouseenter(function() {
+  	$(this).css('color', '#E5E5E5');
+  }).mouseleave(function() {
+  	$(this).css('color', '#FFFFFF');
+  });
 
 	// Fit Text
 	$('#responsive_headline').fitText(0.4);

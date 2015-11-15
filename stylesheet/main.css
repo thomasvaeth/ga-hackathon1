@@ -4,6 +4,9 @@
 @font-face {
 	font-family: 'Windows'; src: url('../fonts/Windows.ttf');
 }
+@font-face {
+	font-family: 'Calendar'; src: url('../fonts/CalendarNote.ttf');
+}
 
 /* Customized fullPage.js navbar */
 #fp-nav ul li a span,
@@ -26,6 +29,7 @@
   border: 2px solid #FFFFFF;
 }
 
+/* Font Awesome arrows */
 a,
 a:link,
 a:hover,
@@ -46,8 +50,15 @@ i {
 	text-align: center;
 }
 
-.section-1 {
+p {
+	cursor: default;
+}
 
+.section-1 {
+	background: -webkit-radial-gradient(#323232, #000000);
+	background: -o-radial-gradient(#323232, #000000);
+	background: -mox-radial-gradient(#323232, #000000);
+	background: radial-gradient(closest-side at 50%, #323232, #000000);
 }
 
 .section-1 p {
@@ -56,12 +67,33 @@ i {
 	margin-left: 25px;
 	text-align: left;
 	font-family: 'Windows';
-	color: #09B10A;
+	color: #00FF00;
 	font-size: 216px;
 }
 
 .section-2 {
+	background: url(../images/seattle.jpg) no-repeat;
+	background-size: cover;
+}
 
+.section-2 p {
+	font-family: 'Calendar';
+	color: #FFFFFF;
+	font-size: 252px;
+	letter-spacing: -5px;
+	/* 3D text-shadow from @mdo (Bootstrap) */
+	text-shadow: 0 1px 0 #CCCCCC, 
+               0 2px 0 #C9C9C9,
+               0 3px 0 #BBBBBB,
+               0 4px 0 #B9B9B9,
+               0 5px 0 #AAAAAA,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 }
 
 .section-3 {
@@ -75,11 +107,13 @@ i {
 
 .section-4 p {
 	font-family: 'Sex Pistols';
+/*	font-size: 288px;*/
 	color: #FD44AE;
 	mix-blend-mode: screen;
 }
 
-/* Only using pulse, so comibining CSS sheets. */
+
+/* Only using pulse, so combining CSS sheets. */
 /*!
 Animate.css - http://daneden.me/animate
 Version - 3.4.0
