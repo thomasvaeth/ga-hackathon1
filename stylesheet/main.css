@@ -2,13 +2,43 @@
 	font-family: 'Sex Pistols'; src: url('../fonts/SexPistols.ttf');
 }
 
+/* Customized fullPage.js navbar */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #FFFFFF;
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+	background: transparent;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+}
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
 i {
 	position: absolute;
 	bottom: 15px;
 }
 
 .section {
-	text-align: center
+	text-align: center;
 }
 
 .section-1 {
