@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Sex Pistols'; src: url('../fonts/SexPistols.ttf');
+}
+
+i {
+	position: absolute;
+	bottom: 15px;
+}
+
+.section {
+	text-align: center
+}
+
+.section-1 {
+
+}
+
+.section-2 {
+
+}
+
+.section-3 {
+
+}
+
+.section-4 {
+	background: url(../images/sex-pistols.jpg) no-repeat;
+	background-size: cover;
+}
+
+.section-4 p {
+	font-family: 'Sex Pistols';
+	color: #FD44AE;
+	mix-blend-mode: screen;
+}
