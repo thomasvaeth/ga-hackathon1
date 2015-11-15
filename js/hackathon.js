@@ -39,7 +39,7 @@ $(document).ready(function() {
 	  controlArrows: true,
 	  verticalCentered: true,
 	  resize : false,
-	  sectionsColor : ['#000000', '#FFFFFF', '#000000', '#000000'],
+	  sectionsColor : ['#000000', '#FFFFF', '#FFFFFF', '#000000'],
 	  paddingTop: '0',
 	  paddingBottom: '0',
 	  fixedElements: '',
@@ -58,6 +58,11 @@ $(document).ready(function() {
 	  afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 	  onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 	});
+
+	// Big Video
+  var BV = new $.BigVideo();
+  BV.init();
+  BV.show('videos/Planet-Earth.mp4', {ambient: true});
 
 	// Typed
 	$('.typed').typed({
