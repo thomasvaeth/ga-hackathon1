@@ -78,10 +78,9 @@ $(document).ready(function() {
   $('.fancy_title').text(today).lettering();
   $('span').mouseenter(function() {
   	$(this).css('color', '#E5E5E5');
+  	$(this).addClass('animated swing infinite');
   }).mouseleave(function() {
   	$(this).css('color', '#FFFFFF');
+  	$(this).removeClass('animated swing infinite');
   });
-
-	// Fit Text
-	$('#responsive_headline').fitText(0.4);
 });
