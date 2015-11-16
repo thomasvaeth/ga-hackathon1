@@ -39,7 +39,7 @@ $(document).ready(function() {
 	  controlArrows: true,
 	  verticalCentered: true,
 	  resize : false,
-	  sectionsColor : ['#000000', '#FFFFFF', '', '#000000', '#000000'],
+	  sectionsColor : ['#000000', '#FFFFFF', '', '#000000', ''],
 	  paddingTop: '0',
 	  paddingBottom: '0',
 	  fixedElements: '',

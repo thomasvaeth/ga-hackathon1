@@ -130,7 +130,6 @@ p {
 .section-5 {
   background: url(../images/mona-lisa.jpg) no-repeat;
   background-size: 100%;
-
   -webkit-transition: all 3s ease-in-out;
   transition: all 3s ease-in-out;
 }
@@ -138,6 +137,13 @@ p {
 .section-5:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.section-5 p {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 144px;
+  color: white;
+  letter-spacing: -8px;
 }
 
 
