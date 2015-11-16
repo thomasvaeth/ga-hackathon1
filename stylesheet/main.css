@@ -98,9 +98,20 @@ p {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.section-3 p {
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Poiret One', cursive;
+	font-size: 72px;
+	font-weight: 600;
+	color: #FDE3A7;
+	border: 10px double #FFFFFF;
+	padding: 75px 0;
+}
+
 #big-video-wrap {
 	position: absolute;
-	z-index: 1;
+	z-index: -1;
 }
 
 .section-4 {
