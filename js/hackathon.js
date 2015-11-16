@@ -4,7 +4,7 @@ $(document).ready(function() {
 	  // Navigation
 	  menu: false,
 	  lockAnchors: false,
-	  anchors:['first', 'second', 'third', 'fourth'],
+	  anchors:['first', 'second', 'third', 'fourth', 'fifth'],
 	  navigation: true,
 	  navigationPosition: 'right',
 	  navigationTooltips: false,
@@ -39,7 +39,7 @@ $(document).ready(function() {
 	  controlArrows: true,
 	  verticalCentered: true,
 	  resize : false,
-	  sectionsColor : ['#000000', '#FFFFF', '', '#000000'],
+	  sectionsColor : ['#000000', '#FFFFFF', '', '#000000', '#000000'],
 	  paddingTop: '0',
 	  paddingBottom: '0',
 	  fixedElements: '',
@@ -76,7 +76,7 @@ $(document).ready(function() {
   var date = new Date().getDay();
   var today = weekdays[date];
   $('.fancy_title').text(today).lettering();
-  $('span').mouseenter(function() {
+  $('.fancy_title span').mouseenter(function() {
   	$(this).css('color', '#E5E5E5');
   	$(this).addClass('animated swing');
   }).mouseleave(function() {

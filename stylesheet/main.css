@@ -117,6 +117,7 @@ p {
 .section-4 {
 	background: url(../images/sex-pistols.jpg) no-repeat;
 	background-size: cover;
+  z-index: 2;
 }
 
 .section-4 p {
@@ -124,6 +125,19 @@ p {
 	font-size: 324px;
 	color: #FD44AE;
 	mix-blend-mode: screen;
+}
+
+.section-5 {
+  background: url(../images/mona-lisa.jpg) no-repeat;
+  background-size: 100%;
+
+  -webkit-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+
+.section-5:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 
