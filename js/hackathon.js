@@ -68,6 +68,7 @@ $(document).ready(function() {
 	$('.typed').typed({
 		strings: ['^350Wake u^450p, Neo...^5000', '^1500The Matr^300ix ha^150s you.^200..^4000', '^1200Follo^400w the ^500whi^300te ra^200bbit.^7500', '^200Knock, knock, Neo.^3000', ''],
 		typeSpeed: 150,
+		loop: true,
 		showCursor: false
 	});
 
