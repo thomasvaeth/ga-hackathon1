@@ -78,9 +78,9 @@ $(document).ready(function() {
   $('.fancy_title').text(today).lettering();
   $('span').mouseenter(function() {
   	$(this).css('color', '#E5E5E5');
-  	$(this).addClass('animated swing infinite');
+  	$(this).addClass('animated swing');
   }).mouseleave(function() {
   	$(this).css('color', '#FFFFFF');
-  	$(this).removeClass('animated swing infinite');
+  	$(this).removeClass('animated swing');
   });
 });
