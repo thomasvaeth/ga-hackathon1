@@ -78,10 +78,8 @@ $(document).ready(function() {
   var today = weekdays[date];
   $('.fancy_title').text(today).lettering();
   $('.fancy_title span').mouseenter(function() {
-  	$(this).css('color', '#E5E5E5');
   	$(this).addClass('animated swing');
   }).mouseleave(function() {
-  	$(this).css('color', '#FFFFFF');
   	$(this).removeClass('animated swing');
   });
 });
