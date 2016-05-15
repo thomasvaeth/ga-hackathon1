@@ -98,6 +98,10 @@ p {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.fancy_title span {
+  display: inline-block;
+}
+
 .section-3 p {
 	margin: 0 auto;
 	width: 50%;
